@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: kube8s
   labels:
-    app: HelloWorld
+    app: helloworld
 spec:
   selector:
-    app: Helloworld
+    app: helloworld
     type: backend
   ports:
   - port: 80
