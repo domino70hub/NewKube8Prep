@@ -20,8 +20,8 @@ spec:
         type: backend
     spec:
       containers:
-      - name: nginx
-        image: nginx
+      - name: welcome
+        image: okteto/welcome:test
         ports:
         - containerPort: 80
         imagePullPolicy: Always
