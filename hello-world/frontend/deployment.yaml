@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: welcome
-        image: okteto/welcome:test
+        image: obdev/vod-front
         ports:
         - containerPort: 80
         imagePullPolicy: Always
