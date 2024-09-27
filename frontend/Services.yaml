@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kube8s
+  labels:
+    app: HelloWorld
+spec:
+  selector:
+    app: Helloworld
+    type: backend
+  ports:
+  - port: 80
+    targetPort: 80

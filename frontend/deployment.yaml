@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kube8s
+  labels:
+    app: Helloworld
+    type: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: Helloworld
+      type: backend
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: Helloworld
+        type: backend
+    spec:
+      containers:
+      - name: Helloworld
+        image: hello-world
+        ports:
+        - containerPort: 80
+        imagePullPolicy: Always
