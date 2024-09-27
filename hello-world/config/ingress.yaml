@@ -10,7 +10,7 @@ spec:
   tls:
   - hosts:
     - k8s.flowzdigital.com  
-    secretName: echo-tls
+    secretName: k8s-tls-secret
   rules:
     - host: k8s.flowzdigital.com
       http:
