@@ -3,20 +3,20 @@ kind: Deployment
 metadata:
   name: kube8s
   labels:
-    app: Helloworld
+    app: helloworld
     type: backend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: Helloworld
+      app: helloworld
       type: backend
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: Helloworld
+        app: helloworld
         type: backend
     spec:
       containers:
