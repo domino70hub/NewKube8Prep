@@ -20,7 +20,7 @@ spec:
         type: backend
     spec:
       containers:
-      - name: Helloworld
+      - name: helloworld
         image: hello-world
         ports:
         - containerPort: 80
